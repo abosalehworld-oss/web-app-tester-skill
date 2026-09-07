@@ -98,3 +98,24 @@ After ALL sprints completed:
 
 > THE CYCLE DOES NOT END UNTIL RE-ANALYSIS IS 100% CLEAN.
 ```
+
+---
+
+## ⛔ ANTI-PREMATURE-CELEBRATION RULE
+
+> **Phase 11 is the REMEDIATION phase ONLY — NOT the final phase.**
+> There are still remaining phases after this one (Phase 12: SEO & Commercial Readiness, Phase 13: Pre-Delivery Sentry Validation).
+> **Do NOT declare the project "done", "production-ready", or "ready for deployment" after completing Phase 11.**
+> You MUST continue to the next phase and await user confirmation before proceeding.
+
+---
+
+## 💡 OPTIONAL: Run Actual Analysis Tools
+
+> If execution tools are available in your environment, prefer running actual commands over mental simulation:
+> - `npm audit` / `yarn audit` / `pnpm audit` (Dependencies)
+> - `npm run build` / `yarn build` (Build verification)
+> - `npx eslint .` / `npx tsc --noEmit` (Linting/Type-checking)
+> - `npx lighthouse` (Performance/SEO audit)
+>
+> If these tools are NOT available, document this limitation in the sprint report.
