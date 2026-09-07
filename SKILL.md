@@ -2,7 +2,7 @@
 name: web-app-tester-comprehensive
 description: >
   Comprehensive web application testing skill that transforms any AI agent into a
-  professional web app QA tester. Covers 13 phases: architecture review, UI/UX & responsive
+  professional web app QA tester. Covers 14 phases: architecture review, UI/UX & responsive
   testing, logic & functional testing, security auditing (OWASP Web Top 10 with MANDATORY
   current-year web search for XSS/CSRF/CORS/CSP/clickjacking), performance & Core Web Vitals
   optimization, browser & device compatibility, API/network resilience, state & data management,
@@ -44,7 +44,7 @@ Every single finding MUST include:
 ✅ REQUIRED: "In `src/components/LoginForm.tsx:45-52`, the form submits credentials via `fetch('/api/login', { body: JSON.stringify({email, password}) })` without CSRF token. An attacker can craft a malicious page that auto-submits this form. Fix: Add CSRF token from `document.cookie` or use `SameSite=Strict` cookies."
 
 ### Rule 2: MANDATORY PHASE GATES
-This review has **13 phases**. Each phase has a **GATE** — a mandatory checklist that must be
+This review has **14 phases**. Each phase has a **GATE** — a mandatory checklist that must be
 completed with evidence BEFORE proceeding to the next phase.
 
 ```
@@ -298,7 +298,8 @@ Citations must represent GENUINE analysis, not padding to meet minimums:
 | 10 | Final Delivery + Fresh-Eyes | `10-final-delivery-checklist.md` | Complete checklist, priority matrix, **FRESH-EYES re-analysis**, sign-off |
 | 11 | Structured Remediation *(optional)* | `11-remediation-execution.md` | Sprint-based fixes with verification gates |
 | 12 | SEO & Commercial Readiness | `12-seo-commercial-readiness.md` | Meta tags, Open Graph, payments, analytics, GDPR, PWA |
-| 13 | Pre-Delivery Sentry Validation | `13-pre-delivery-sentry-validation.md` | Sentry setup, real-browser testing, error tracking, final sign-off |
+| 13 | Automated Offensive Security Testing | `13-automated-offensive-testing.md` | OWASP ZAP, Nuclei, SSL/TLS, security headers, dependency CVEs, nikto |
+| 14 | Pre-Delivery Sentry Validation | `14-pre-delivery-sentry-validation.md` | Sentry setup, real-browser testing, error tracking, final sign-off |
 
 ---
 
@@ -358,7 +359,8 @@ After fixes are applied:
 
 ### Step 13: Pre-Delivery Sentry Validation (FINAL STEP)
 After Phase 12 passes:
-- Read `13-pre-delivery-sentry-validation.md`
+- Read `13-automated-offensive-testing.md`
+- Read `14-pre-delivery-sentry-validation.md`
 - Guide the user step-by-step through Sentry setup
 - Walk through real-browser testing scenarios
 - Analyze Sentry results → produce FINAL delivery verdict
@@ -373,7 +375,8 @@ The cycle repeats until:
   ✅ Zero 🟠 High findings
   ✅ Fresh-Eyes re-analysis found ZERO new Critical/High issues
   ✅ Phase 12 verdict = 🟢 READY
-  ✅ Phase 13 Sentry validation = 🟢 CLEAN
+  ✅ Phase 13 Offensive testing = 🟢 CLEAN
+  ✅ Phase 14 Sentry validation = 🟢 CLEAN
   ✅ User confirms final sign-off
 ```
 
@@ -395,7 +398,8 @@ When executing each phase, you MUST read the corresponding file for detailed ins
 - Phase 10: Read `10-final-delivery-checklist.md` in this skill folder
 - Phase 11 *(optional)*: Read `11-remediation-execution.md` in this skill folder
 - Phase 12: Read `12-seo-commercial-readiness.md` in this skill folder
-- Phase 13: Read `13-pre-delivery-sentry-validation.md` in this skill folder
+- Phase 13: Read `13-automated-offensive-testing.md` in this skill folder
+- Phase 14: Read `14-pre-delivery-sentry-validation.md` in this skill folder
 
 ---
 

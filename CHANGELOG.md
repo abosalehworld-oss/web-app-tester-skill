@@ -2,6 +2,22 @@
 
 All notable changes to the Web App Tester Skill are documented here.
 
+## [1.2.0] - 2026-09-08
+
+### Added
+- **Phase 13: Automated Offensive Security Testing** (`13-automated-offensive-testing.md`)
+  - OWASP ZAP automated baseline and full scan
+  - Nuclei vulnerability scanning with CVE templates
+  - SSL/TLS configuration testing (testssl.sh)
+  - Security headers comprehensive audit
+  - Dependency vulnerability scanning (npm audit, retire.js, Snyk, Trivy)
+  - Web server misconfiguration scanning (nikto)
+  - 28 minimum citations from real tool outputs
+  - Tool unavailability protocol with manual fallback
+- Sentry validation renumbered to Phase 14
+- Total minimum citations raised from 91 to 119
+- Total phases raised from 13 to 14
+
 ## [1.0.0] - 2026-09-06
 
 ### Added

@@ -104,7 +104,7 @@ After ALL sprints completed:
 ## ⛔ ANTI-PREMATURE-CELEBRATION RULE
 
 > **Phase 11 is the REMEDIATION phase ONLY — NOT the final phase.**
-> There are still remaining phases after this one (Phase 12: SEO & Commercial Readiness, Phase 13: Pre-Delivery Sentry Validation).
+> There are still remaining phases after this one (Phase 12: SEO & Commercial Readiness, Phase 13: Automated Offensive Testing, Phase 14: Pre-Delivery Sentry Validation).
 > **Do NOT declare the project "done", "production-ready", or "ready for deployment" after completing Phase 11.**
 > You MUST continue to the next phase and await user confirmation before proceeding.
 
