@@ -284,6 +284,10 @@ Citations must represent GENUINE analysis, not padding to meet minimums:
 
 ## 📋 PHASE OVERVIEW
 
+> ⚠️ **This skill has 14 phases — Phase 13 is a MANDATORY Automated Offensive Security Testing (ethical hacking) phase that uses real attack tools (OWASP ZAP, Nuclei, nikto, SSL/TLS scanners). You MUST execute it. Skipping it or claiming "no tools available" without attempting installation = ENTIRE REVIEW INVALID.**
+>
+> 🔴 **If you claim "tools unavailable", you MUST first show actual `run_command` terminal output proving that installation commands (pip install, npm install, docker pull, etc.) ALL failed — no terminal output proof = you are fabricating excuses and your review is FRAUDULENT.**
+
 | # | Phase | File | Focus |
 |---|-------|------|-------|
 | 1 | Architecture Review | `01-architecture-review.md` | Project structure, dependencies, routing, rendering strategy |
